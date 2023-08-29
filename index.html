@@ -26,10 +26,9 @@
       <div class="header__wrapper main-nav no-js" data-menu-open>
         <div class="main-nav__logo">
           <a href="index.html">
-            <img class="logo-light" src="./img/svg/logo-light-lifetour.svg" width="205" height="62"
-              alt="Логотип LIFETOUR">
-            <img class="logo-dark" src="./img/svg/logo-dark-lifetour.svg" width="205" height="62"
-              alt="Логотип LIFETOUR">
+            <svg class="logo-icon" width="205" height="62">
+              <use href="img/sprite.svg#icon-logo"></use>
+            </svg>
           </a>
         </div>
         <button class="main-nav__toggle" type="button">
@@ -276,7 +275,7 @@
                     </div>
                     <article class="tours__text">
                       <h4>Путешествие <br>вокруг Эльбруса</h4>
-                      <ul class="tours__info">
+                      <ul class="tours__info tours__info--caucasus">
                         <li class="pin">
                           <svg width="9" height="12">
                             <use href="/img/sprite.svg#icon-pin"></use>
@@ -1087,7 +1086,7 @@
                     </svg>
                   </span>
                   <h4>Экспертиза и&nbsp;знания</h4>
-                  <p>Наша команда опытных гидов имеет обширные знания о&nbsp;местности, погодных условиях и&nbsp;технике безопасности. Это гарантирует, что наши клиенты находятся в&nbsp;надежных руках и&nbsp;могут в&nbsp;полной мере насладиться опытом без опасений.</p>
+                  <p>Наша команда опытных гидов имеет обширные знания о&nbsp;местности, погодных условиях и&nbsp;технике безопасности. Это гарантupует, что наши клиенты находятся в&nbsp;надежных руках и&nbsp;могут в&nbsp;полной мере насладиться опытом без опасений.</p>
                 </div>
               </div>
               <!-- Слайд 3 -->
@@ -1189,8 +1188,12 @@
               <div class="swiper-slide">
                 <div class="photo-gallery__img">
                   <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="./img/gallery-photo-1-mobile.webp 1x, ./img/gallery-photo-1-mobile@2x.webp 2x">
                     <source type="image/webp"
                       srcset="./img/gallery-photo-1-desktop.webp 1x, ./img/gallery-photo-1-desktop@2x.webp 2x">
+                    <source media="(max-width: 767px)"
+                      srcset="./img/gallery-photo-1-mobile.jpg 1x, ./img/gallery-photo-1-mobile@2x.jpg 2x">
                     <img src="./img/gallery-photo-1-desktop.jpg" width="275" height="449"
                       srcset="./img/gallery-photo-1-desktop@2x.jpg 2x" alt="Фото туриста с рюкзаком" loading="lazy">
                   </picture>
@@ -1200,16 +1203,24 @@
               <div class="swiper-slide">
                 <div class="photo-gallery__img">
                   <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="./img/gallery-photo-2-mobile.webp 1x, ./img/gallery-photo-2-mobile@2x.webp 2x">
                     <source type="image/webp"
                       srcset="./img/gallery-photo-2-desktop.webp 1x, ./img/gallery-photo-2-desktop@2x.webp 2x">
+                    <source media="(max-width: 767px)"
+                      srcset="./img/gallery-photo-2-mobile.jpg 1x, ./img/gallery-photo-2-mobile@2x.jpg 2x">
                     <img src="./img/gallery-photo-2-desktop.jpg" width="298" height="179"
                       srcset="./img/gallery-photo-2-desktop@2x.jpg 2x" alt="Фото посиделок у костра" loading="lazy">
                   </picture>
                 </div>
                 <div class="photo-gallery__img">
                   <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="./img/gallery-photo-3-mobile.webp 1x, ./img/gallery-photo-3-mobile@2x.webp 2x">
                     <source type="image/webp"
-                      srcset="./img/gallery-photo-3-desktop.webp 1x, ./img/gallery-photo-3-desktop@2x.webp 2x">
+                      srcset="./img/gallery-photo-2-desktop.webp 1x, ./img/gallery-photo-3-desktop@2x.webp 2x">
+                    <source media="(max-width: 767px)"
+                      srcset="./img/gallery-photo-3-mobile.jpg 1x, ./img/gallery-photo-3-mobile@2x.jpg 2x">
                     <img src="./img/gallery-photo-3-desktop.jpg" width="298" height="265"
                       srcset="./img/gallery-photo-3-desktop@2x.jpg 2x" alt="Фото туриста с компасом" loading="lazy">
                   </picture>
@@ -1219,8 +1230,12 @@
               <div class="swiper-slide">
                 <div class="photo-gallery__img">
                   <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="./img/gallery-photo-4-mobile.webp 1x, ./img/gallery-photo-4-mobile@2x.webp 2x">
                     <source type="image/webp"
                       srcset="./img/gallery-photo-4-desktop.webp 1x, ./img/gallery-photo-4-desktop@2x.webp 2x">
+                    <source media="(max-width: 767px)"
+                      srcset="./img/gallery-photo-4-mobile.jpg 1x, ./img/gallery-photo-4-mobile@2x.jpg 2x">
                     <img src="./img/gallery-photo-4-desktop.jpg" width="272" height="449"
                       srcset="./img/gallery-photo-4-desktop@2x.jpg 2x" alt="Фото туристов в горах" loading="lazy">
                   </picture>
@@ -1230,16 +1245,24 @@
               <div class="swiper-slide">
                 <div class="photo-gallery__img">
                   <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="./img/gallery-photo-5-mobile.webp 1x, ./img/gallery-photo-5-mobile@2x.webp 2x">
                     <source type="image/webp"
                       srcset="./img/gallery-photo-5-desktop.webp 1x, ./img/gallery-photo-5-desktop@2x.webp 2x">
+                    <source media="(max-width: 767px)"
+                      srcset="./img/gallery-photo-5-mobile.jpg 1x, ./img/gallery-photo-5-mobile@2x.jpg 2x">
                     <img src="./img/gallery-photo-5-desktop.jpg" width="298" height="179"
                       srcset="./img/gallery-photo-5-desktop@2x.jpg 2x" alt="Фото туристов в горах" loading="lazy">
                   </picture>
                 </div>
                 <div class="photo-gallery__img">
                   <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="./img/gallery-photo-6-mobile.webp 1x, ./img/gallery-photo-6-mobile@2x.webp 2x">
                     <source type="image/webp"
                       srcset="./img/gallery-photo-6-desktop.webp 1x, ./img/gallery-photo-6-desktop@2x.webp 2x">
+                    <source media="(max-width: 767px)"
+                      srcset="./img/gallery-photo-6-mobile.jpg 1x, ./img/gallery-photo-6-mobile@2x.jpg 2x">
                     <img src="./img/gallery-photo-6-desktop.jpg" width="298" height="265"
                       srcset="./img/gallery-photo-6-desktop@2x.jpg 2x" alt="Фото палатки в горах" loading="lazy">
                   </picture>
@@ -1249,8 +1272,12 @@
               <div class="swiper-slide">
                 <div class="photo-gallery__img">
                   <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="./img/gallery-photo-7-mobile.webp 1x, ./img/gallery-photo-7-mobile@2x.webp 2x">
                     <source type="image/webp"
                       srcset="./img/gallery-photo-7-desktop.webp 1x, ./img/gallery-photo-7-desktop@2x.webp 2x">
+                    <source media="(max-width: 767px)"
+                      srcset="./img/gallery-photo-7-mobile.jpg 1x, ./img/gallery-photo-7-mobile@2x.jpg 2x">
                     <img src="./img/gallery-photo-7-desktop.jpg" width="276" height="449"
                       srcset="./img/gallery-photo-7-desktop@2x.jpg 2x" alt="Фото туристов в лесу" loading="lazy">
                   </picture>
@@ -1260,16 +1287,24 @@
               <div class="swiper-slide">
                 <div class="photo-gallery__img">
                   <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="./img/gallery-photo-5-mobile.webp 1x, ./img/gallery-photo-5-mobile@2x.webp 2x">
                     <source type="image/webp"
                       srcset="./img/gallery-photo-5-desktop.webp 1x, ./img/gallery-photo-5-desktop@2x.webp 2x">
+                    <source media="(max-width: 767px)"
+                      srcset="./img/gallery-photo-5-mobile.jpg 1x, ./img/gallery-photo-5-mobile@2x.jpg 2x">
                     <img src="./img/gallery-photo-5-desktop.jpg" width="298" height="179"
                       srcset="./img/gallery-photo-5-desktop@2x.jpg 2x" alt="Фото туристов в горах" loading="lazy">
                   </picture>
                 </div>
                 <div class="photo-gallery__img">
                   <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="./img/gallery-photo-6-mobile.webp 1x, ./img/gallery-photo-6-mobile@2x.webp 2x">
                     <source type="image/webp"
                       srcset="./img/gallery-photo-6-desktop.webp 1x, ./img/gallery-photo-6-desktop@2x.webp 2x">
+                    <source media="(max-width: 767px)"
+                      srcset="./img/gallery-photo-6-mobile.jpg 1x, ./img/gallery-photo-6-mobile@2x.jpg 2x">
                     <img src="./img/gallery-photo-6-desktop.jpg" width="298" height="265"
                       srcset="./img/gallery-photo-6-desktop@2x.jpg 2x" alt="Фото палатки в горах" loading="lazy">
                   </picture>
@@ -1279,8 +1314,12 @@
               <div class="swiper-slide">
                 <div class="photo-gallery__img">
                   <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="./img/gallery-photo-4-mobile.webp 1x, ./img/gallery-photo-4-mobile@2x.webp 2x">
                     <source type="image/webp"
                       srcset="./img/gallery-photo-4-desktop.webp 1x, ./img/gallery-photo-4-desktop@2x.webp 2x">
+                    <source media="(max-width: 767px)"
+                      srcset="./img/gallery-photo-4-mobile.jpg 1x, ./img/gallery-photo-4-mobile@2x.jpg 2x">
                     <img src="./img/gallery-photo-4-desktop.jpg" width="272" height="449"
                       srcset="./img/gallery-photo-4-desktop@2x.jpg 2x" alt="Фото туристов в горах" loading="lazy">
                   </picture>
@@ -1290,16 +1329,24 @@
               <div class="swiper-slide">
                 <div class="photo-gallery__img">
                   <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="./img/gallery-photo-2-mobile.webp 1x, ./img/gallery-photo-2-mobile@2x.webp 2x">
                     <source type="image/webp"
                       srcset="./img/gallery-photo-2-desktop.webp 1x, ./img/gallery-photo-2-desktop@2x.webp 2x">
+                    <source media="(max-width: 767px)"
+                      srcset="./img/gallery-photo-2-mobile.jpg 1x, ./img/gallery-photo-2-mobile@2x.jpg 2x">
                     <img src="./img/gallery-photo-2-desktop.jpg" width="298" height="179"
                       srcset="./img/gallery-photo-2-desktop@2x.jpg 2x" alt="Фото посиделок у костра" loading="lazy">
                   </picture>
                 </div>
                 <div class="photo-gallery__img">
                   <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="./img/gallery-photo-3-mobile.webp 1x, ./img/gallery-photo-3-mobile@2x.webp 2x">
                     <source type="image/webp"
                       srcset="./img/gallery-photo-3-desktop.webp 1x, ./img/gallery-photo-3-desktop@2x.webp 2x">
+                    <source media="(max-width: 767px)"
+                      srcset="./img/gallery-photo-3-mobile.jpg 1x, ./img/gallery-photo-3-mobile@2x.jpg 2x">
                     <img src="./img/gallery-photo-3-desktop.jpg" width="298" height="265"
                       srcset="./img/gallery-photo-3-desktop@2x.jpg 2x" alt="Фото туриста с компасом" loading="lazy">
                   </picture>
@@ -1309,8 +1356,12 @@
               <div class="swiper-slide">
                 <div class="photo-gallery__img">
                   <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="./img/gallery-photo-1-mobile.webp 1x, ./img/gallery-photo-1-mobile@2x.webp 2x">
                     <source type="image/webp"
                       srcset="./img/gallery-photo-1-desktop.webp 1x, ./img/gallery-photo-1-desktop@2x.webp 2x">
+                    <source media="(max-width: 767px)"
+                      srcset="./img/gallery-photo-1-mobile.jpg 1x, ./img/gallery-photo-1-mobile@2x.jpg 2x">
                     <img src="./img/gallery-photo-1-desktop.jpg" width="275" height="449"
                       srcset="./img/gallery-photo-1-desktop@2x.jpg 2x" alt="Фото туриста с рюкзаком" loading="lazy">
                   </picture>
